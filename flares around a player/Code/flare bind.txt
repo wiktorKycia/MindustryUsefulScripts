@@ -1,0 +1,15 @@
+ubind @flare
+sensor flag @unit @flag
+jump 4 equal flag 0
+end
+read shooting cell1 2
+jump 11 equal shooting true
+read player_x cell1 0
+read player_y cell1 1
+ucontrol approach player_x player_y 10 0 0
+ucontrol target player_x player_y 0 0 0
+end
+read target_x cell1 3
+read target_y cell1 4
+ucontrol approach target_x target_y 12 0 0
+ucontrol target target_x target_y 1 0 0
